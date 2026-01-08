@@ -16,7 +16,9 @@ public class BirdSCript : MonoBehaviour
 
     void Update() {
 
-        //jumps every time the space key is pressed and the player is alive (legacy input) (will change that later)
+        //jumps every time the space key is pressed and the player is alive (legacy input)
+
+        //refactor to new imput system
         if (Input.GetKeyDown(KeyCode.Space) && alive) {
             myRigidbody.linearVelocity = new Vector2(0, flapStrength);
 
